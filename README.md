@@ -1,8 +1,8 @@
 # TM DB
 
-Scripts which help to store the movie database locally.
+Scripts that help to store the movie database locally.
 
-You can doanload infor from site [themoviedb.org](https://www.themoviedb.org/) and then use search by name or use similar search.
+You can download info from a site [themoviedb.org](https://www.themoviedb.org/) and then use search by name or use a similar search.
 
 ## Prepare your environment
 
@@ -13,7 +13,7 @@ python --version
 #>Python 3.9.6
 ```
 
-Activate virtual environment.
+Activate a virtual environment.
 
 ```bash
 python -m venv venv
@@ -28,14 +28,14 @@ Install dependencies.
 pip install -r requirements.txt
 ```
 
-API Key can be get from the site [themoviedb.org](https://www.themoviedb.org/) after registration.
-Detailed instruction is available [here](https://developers.themoviedb.org/3/getting-started/introduction)
+API Key can be got from the site [themoviedb.org](https://www.themoviedb.org/) after registration.
+Detailed instruction is available [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
-Save this API Key in a secret place - you will need it for sxripts.
+Save this API Key in a secret place - you will need it for scripts.
 
 ## make_own_db.py
 
-To start working with movies DB you should download it and store locallyusing `make_own_db.py` script.
+To start working with movies DB you should download it and store locally using the `make_own_db.py` script.
 
 `make_own_db.py` script helps to download data.
 
@@ -43,11 +43,11 @@ To start working with movies DB you should download it and store locallyusing `m
 python make_own_db.py
 ```
 
-As a result file `MyFilmDB.json` will be placed near your script.
+As a result, file `MyFilmDB.json` will be placed near your script.
 
-Please note, only 1000 films records will be downloaded.
+Please note, that only 1000 records will be downloaded.
 
-After that we can go to the one of the next scripts either `search_in_db.py` or `find_similar.py`. _About them below_.
+After that, we can go to one of the next scripts either `search_in_db.py` or `find_similar.py`. _About them below_.
 
 ## search_in_db.py
 
@@ -62,9 +62,9 @@ Life in Loops (A Megacities RMX)
 
 ## find_similar.py
 
-Script searches similar movie by exact title.
+The script searches for similar movies by exact title.
 
-Similiraties are defined by the following parameter with weights:
+Similarities are defined by the following parameter with weights:
 
 |Parameter|Weight|
 |-|-|
@@ -94,9 +94,9 @@ Set of functions to work with [TMDB API](https://api.themoviedb.org).
 
 ### hello_api_TMDB.py
 
-Script to check API key. Makes request to tmdb API with provided API Key.
+Script to check API key. Requests tmdb API with provided API Key.
 
-If everythoin is OK you will see budget of the movie "Saw II".
+If everything is OK you will see the budget for the movie "Saw II".
 
 ```bash
 python hello_api_TMDB.py
